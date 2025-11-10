@@ -1,0 +1,20 @@
+# Backend (Python/Django)
+backend/venv/
+backend/db.sqlite3
+backend/__pycache__/
+backend/*.pyc
+backend/codeleap_backend.egg-info/
+
+# Frontend (Node/Vite)
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/npm-debug.log
+
+# Arquivos de Sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de IDE
+.vscode/
+.idea/
