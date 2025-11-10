@@ -140,7 +140,7 @@ body.dark .modal-button.cancel {
   color: #eee;
 }
 
-/* body.dark .modal-button.edit-cancel {
+body.dark .modal-button.edit-cancel {
   background-color: #333;
   color: #eee;
   border: 1px solid #444;
@@ -148,7 +148,7 @@ body.dark .modal-button.cancel {
 
 body.dark .modal-button.edit-cancel:hover {
   background-color: #444;
-} */
+}
 
 body.dark .modal-button.cancel:hover {
   background-color: #444;

@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import Button from '../components/common/Button';
+import FormInput from '../components/common/FormInput';
 import './Home.css';
 
 export default function Home({ onLogin }) {
@@ -26,23 +28,24 @@ export default function Home({ onLogin }) {
       <h1 className='login-title'>Welcome to CodeLeap network!</h1>
       <p className='login-subtitle'>Please enter your username</p>
 
-      <input
+      <FormInput
+        variant='login'
         type='text'
         placeholder='Username'
-        className='login-input'
         value={name}
         onChange={(e) => setName(e.target.value)}
         disabled={loading}
         onKeyDown={handleKeyDown}
       />
 
-      <button
-        className='login-button'
-        disabled={!name.trim() || loading}
+      <Button
+        variant='login'
+        disabled={!name.trim()}
+        isLoading={loading}
         onClick={handleSend}
       >
-        {loading ? 'Loading...' : 'ENTER'}
-      </button>
+        ENTER
+      </Button>
 
       {loading && <div className='login-progress-bar' />}
     </div>

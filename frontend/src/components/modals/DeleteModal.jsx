@@ -1,4 +1,5 @@
 import Modal from './Modal';
+import Button from '../common/Button';
 import './Modal.css';
 
 export default function DeleteModal({ isOpen, onClose, onDelete }) {
@@ -9,12 +10,12 @@ export default function DeleteModal({ isOpen, onClose, onDelete }) {
       </h3>
 
       <div className='modal-actions'>
-        <button className='modal-button cancel' onClick={onClose}>
+        <Button variant='cancel' onClick={onClose}>
           Cancel
-        </button>
-        <button className='modal-button delete' onClick={onDelete}>
+        </Button>
+        <Button variant='delete' onClick={onDelete}>
           Delete
-        </button>
+        </Button>
       </div>
     </Modal>
   );
